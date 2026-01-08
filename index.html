@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <div class="hud-top-right">
+        <div class="top-row">
+            <span class="emoji">🆔</span> <span id="id">0</span>
+            <span class="separator">|</span>
+            <span class="emoji">👥</span> <span id="online">0</span>
+            <span class="separator">|</span>
+            <span class="emoji">🕒</span> <span id="time">00:00</span>
+        </div>
+        <div class="info-row">
+            <span class="emoji">💼</span> <span id="job">Chargement...</span>
+        </div>
+        <div class="info-row money-green">
+            <span class="emoji">💵</span> <span id="cash">0 $</span>
+        </div>
+        <div class="info-row money-purple">
+            <span class="emoji">💳</span> <span id="bank">0 $</span>
+        </div>
+    </div>
+
+    <div class="hud-bottom-left">
+        <div class="info-box">
+            <span class="emoji">📍</span> <span id="postal">0000</span>
+        </div>
+
+        <div class="status-container">
+            <div class="stat-item"><span class="emoji">❤️</span> <span id="health">100</span>%</div>
+            
+            <div class="stat-item" id="armor-container" style="display: none;">
+                <span class="emoji">🛡️</span> <span id="armor">0</span>%
+            </div>
+            
+            <div class="stat-item"><span class="emoji">🍔</span> <span id="hunger">100</span>%</div>
+            
+            <div class="stat-item"><span class="emoji">💧</span> <span id="thirst">100</span>%</div>
+            
+            <div class="stat-item"><span class="emoji">⚡</span> <span id="stamina">100</span>%</div>
+
+            <div class="stat-item">
+                <span id="mic-icon" class="emoji mic-default">🎙️</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hud-bottom-right">
+        
+        <div class="box-right" id="ammoHud" style="display: none; margin-bottom: 10px;">
+            <div class="ammo-box">
+                <span class="emoji">🔫</span> 
+                <span id="ammo-count" class="highlight">0</span> 
+            </div>
+        </div>
+
+        <div class="box-right" id="carHud" style="display: none;">
+            <div class="car-content">
+                <div class="speed-box">
+                    <span id="speed">0</span> <span class="unit">KM/H</span>
+                </div>
+                <div class="fuel-box">
+                    <span class="emoji">⛽</span> <span id="fuel">100</span>%
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
